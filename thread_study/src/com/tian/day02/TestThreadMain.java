@@ -8,9 +8,9 @@ public class TestThreadMain {
         TestThread thread2 = new TestThread("窗口2");
         TestThread thread3 = new TestThread("窗口3");
 
-//        thread1.start();
-//        thread2.start();
-//        thread3.start();
+        thread1.start();
+        thread2.start();
+        thread3.start();
 
         TestThread2 testThread = new TestThread2();
         Thread thread4 = new Thread(testThread);
@@ -19,8 +19,11 @@ public class TestThreadMain {
         thread4.setName("售电影票窗口1");
         thread5.setName("售电影票窗口2");
         thread6.setName("售电影票窗口3");
-        thread4.start();
-        thread5.start();
-        thread6.start();
+//        thread4.start();
+//        thread5.start();
+//        thread6.start();
+//        new Thread(testThread,"出售电影票窗口1").start();
+//        new Thread(testThread,"出售电影票窗口2").start();
+//        new Thread(testThread,"出售电影票窗口3").start();
     }
 }

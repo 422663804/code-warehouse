@@ -13,12 +13,12 @@ public class TestThread extends Thread {
         while (true) {
             if (ticket > 0) {
                 try {
-                    sleep(1000);
+                    sleep(20);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(name + "正在售出第" + ticket + "张票");
-                ticket--;
+                System.out.println(name + "正在售出第" + ticket-- + "张票");
+//                ticket--;
             } else {
                 break;
             }
